@@ -1,6 +1,12 @@
-import { restartGame, RESTART_GAME, makeGuess, MAKE_GUESS } from "./actions";
+import { restartGame, RESTART_GAME, makeGuess, MAKE_GUESS, generateAuralUpdate, GENERATE_AURAL_UPDATE } from "./actions";
+import { exec } from "child_process";
 
-// describe()
+describe('generateAuralUpdate', () => {
+	it('Should creat an aural responce', () => {
+		const action = generateAuralUpdate()
+		expect(action.type).toEqual(GENERATE_AURAL_UPDATE);
+	});
+});
 
 describe('restartGame', () => {
 	it('Should create a new answer', () => {
