@@ -14,9 +14,6 @@ describe ('feedback', () => {
 		let wrapper	= shallow(<Feedback feedback={TEST_FEEDBACK} />);
 		expect(wrapper.contains(TEST_FEEDBACK)).toEqual(true)
 
-		// const key = [0];
-		// const text = 'Make your guess!'
-		// expect(feedback.props()).toEqual(text);
 	});
 
 
