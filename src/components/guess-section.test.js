@@ -7,3 +7,4 @@ describe('<Guess-section/>', () => {
 	it('Should render without crashing', () => {
 		shallow(<guessSection/>)
 	});
+});
