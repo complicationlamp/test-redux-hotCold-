@@ -1,6 +1,6 @@
 import reducer from './reducer';
 import {generateAuralUpdate, restartGame, makeGuess} from './actions'
-import { stat } from 'fs';
+
 
 describe('hotColdReducer', () => {
 	it('should set the intial state when nothing is passed', () => {
