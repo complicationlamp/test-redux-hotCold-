@@ -20,6 +20,10 @@ describe('<GuessForm/>', () => {
 	});
 
 	it('Shouold clear the input field after submit', () => {
-		
+		const wrapper = mount(<GuessForm dispatch={() => {}} />);
+		const input = wrapper.find('input[type="number"]');
+		input.instance().value = '10';
+		wrapper.simulate('submit');
+		expect(input.instance().value).toEqual('')
 	});
 });
